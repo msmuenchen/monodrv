@@ -33,8 +33,8 @@ int _tmain(int argc, _TCHAR* argv[])
 	printf("handle 0x%x, mem at %x\n",hFile,msgs);
 	if((int)hFile==-1) {
 		printf("no handle\n");
-		scanf("%d",&dwReturn);
-		return 1;
+		scanf_s("%d",&dwReturn);
+		return 0;
 	}
 	while(true) {
 		ClearScreen();
